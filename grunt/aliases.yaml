@@ -1,0 +1,22 @@
+js:
+  - clean:js
+  - eslint
+  - concat
+  - uglify
+css:
+  - clean:css
+  - sasslint
+  - sass
+  - postcss
+build:
+  - clean:build
+  - js
+  - css
+  - writefile
+  - clean:temp
+start:
+  - build
+  - connect
+  - watch
+default:
+  - start

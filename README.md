@@ -1,10 +1,29 @@
 # argendev.com
 
+![Screenshot](https://i.imgur.com/ZLJtYHL.png)
+
+## Prerequisites
+
+* Node.js (https://nodejs.org/)
+* Yarn (https://yarnpkg.com/)
+
+## Development Tasks
+
+| Command | Description |
+|---------|-------------|
+| `yarn install` | Fetch dependencies and build binaries for any Node modules |
+| `yarn start` | Run the app in development mode with live reload on `http://localhost:6789` |
+| `yarn build` | Generate an optimised, production-ready `build` folder |
+
+## CI/CD
+
+* All commits to master trigger a deployment to the production environment (https://argendev.com).
+
 ## Slideshow Background
 
 This is pretty straightforward, but there are two JS settings you'll want to be aware of (found under "Slideshow Background" in `assets/js/main.js`):
 
-### `images`
+* `images`
 
 The list of images to cycle through, given in the following format:
 
@@ -16,14 +35,14 @@ where 'url' is the image (eg. 'images/foo.jpg', 'http://somewhere.else/foo.jpg')
 
 Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
 
-### `delay`
+* `delay`
 
 How long to wait between transitions (in ms). Note that this must be at least twice as long as the transition speed itself (currently 3 seconds).
 
 ## Forms
 
 I have included some basic code under "Signup Form" in `assets/js/main.js` that will let you interact with the form.
-  
+
 ```html
 <form id="signup-form" method="post" action="#">
   <input type="email" name="email" id="email" placeholder="Email Address" />
