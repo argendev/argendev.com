@@ -1,0 +1,36 @@
+.header {
+  bottom: 0;
+  color: #fff;
+  font-family: Rubik, sans-serif;
+  left: 0;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  position: absolute;
+  text-transform: uppercase;
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+.header__title {
+  // background-color: #0084ff;
+  // display: inline-block;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin: 0;
+  // padding: 1rem 1.5rem;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header__slogan {
+  // background-color: #f9ca5e;
+  font-family: Rubik, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  // left: -0.8rem;
+  line-height: 1.75rem;
+  margin: 0;
+  max-width: 350px;
+  // padding: 0.8rem;
+  // position: relative;
+  // top: -0.8rem;
+}

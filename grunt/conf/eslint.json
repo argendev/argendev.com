@@ -10,7 +10,6 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
     "newline-after-var": ["error", "always"],
     "keyword-spacing": ["error"],
     "require-jsdoc": ["off"],

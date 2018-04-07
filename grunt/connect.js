@@ -3,9 +3,9 @@ module.exports = {
     options: {
       hostname: '*',
       port: process.env.PORT || 6789,
-      base: '.',
+      base: 'build',
       livereload: true,
-      open: false
+      open: true
     }
   }
 };
