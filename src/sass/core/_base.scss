@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  height: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizelegibility;
+}

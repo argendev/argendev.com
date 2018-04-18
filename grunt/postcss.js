@@ -13,6 +13,6 @@ module.exports = {
     ]
   },
   dist: {
-    src: '<%= path.dist %>/css/<%= pkg.name %>.<%= pkg.version %>.css'
+    src: '<%= path.dist %>/css/<%= pkg.name %>.<%= pkg.version %>.min.css'
   }
 };

@@ -7,10 +7,14 @@ module.exports = {
     data: {
       name: pkgName,
       version: pkgVersion,
-      buildDate: new Date()
+      date: new Date()
     }
   },
-  main: {
+  index: {
+    src: 'src/index.hbs',
+    dest: 'build/index.html'
+  },
+  version: {
     src: 'grunt/conf/version.hbs',
     dest: 'build/version.txt'
   }

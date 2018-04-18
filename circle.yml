@@ -1,10 +1,10 @@
 machine:
   node:
-    version: 8.9.0
+    version: 8.9.1
 
 deployment:
   production:
     branch: master
     commands:
       - npm run build
-      - surge --project . --domain argendev.com
+      - surge --project ./build --domain argendev.com

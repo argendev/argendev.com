@@ -28,12 +28,6 @@ rules:
       convention: hyphenatedbem
   hex-length: 2
   hex-notation: 2
-  id-name-format:
-    - 2
-    - convention: hyphenatedbem
-  indentation:
-    - 2
-    - size: 2
   leading-zero:
     - 2
     - include: true
@@ -91,7 +85,7 @@ rules:
   pseudo-element: 2
   quotes:
     - 2
-    - style: double
+    - style: single
   shorthand-values: 2
   single-line-per-selector: 2
   space-after-bang: 2
