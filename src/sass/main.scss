@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 // Core styles.
-@import 'core/base';
+@import 'core/variables';
 @import 'core/mixins';
+@import 'core/base';
 @import 'core/typography';
 @import 'core/background';
 

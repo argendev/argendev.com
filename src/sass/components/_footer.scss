@@ -6,7 +6,7 @@
   right: 0;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-desktop) {
     margin-left: 4rem;
     text-align: left;
   }
@@ -16,14 +16,14 @@
     @include horizontal-list;
     margin-bottom: 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-desktop) {
       margin-bottom: 1.5rem;
     }
 
     &-item {
       margin-right: 1.25rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: $bp-desktop) {
         margin-right: 1.85rem;
       }
     }
@@ -34,7 +34,7 @@
       transition: opacity ease-in-out 250ms;
       width: 25px;
 
-      @media (min-width: 768px) {
+      @media (min-width: $bp-desktop) {
         height: 30px;
         width: 30px;
       }
@@ -63,7 +63,7 @@
       margin-right: 1rem;
       padding-right: 1rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: $bp-desktop) {
         font-size: 1.25rem;
         margin-right: 1.25rem;
         padding-right: 1.25rem;

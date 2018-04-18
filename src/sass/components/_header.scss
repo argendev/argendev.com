@@ -7,7 +7,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-desktop) {
     margin-left: 4rem;
     max-width: 400px;
     padding: 0;
@@ -24,7 +24,7 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-desktop) {
       font-size: 3.5rem;
       line-height: 1.25;
     }
@@ -39,7 +39,7 @@
     line-height: 1.9rem;
     margin: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-desktop) {
       font-size: 1.6rem;
     }
   }
