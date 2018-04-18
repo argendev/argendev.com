@@ -2,8 +2,14 @@
   bottom: 0;
   left: 0;
   margin-bottom: 2rem;
-  margin-left: 4rem;
   position: absolute;
+  right: 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-left: 4rem;
+    text-align: left;
+  }
 
   // Social links and contact details.
   &__social {
@@ -11,14 +17,23 @@
     margin-bottom: 1.5rem;
 
     &-item {
-      margin-right: 1.9rem;
+      margin-right: 1.25rem;
+
+      @media (min-width: 768px) {
+        margin-right: 1.85rem;
+      }
     }
 
     &-icon {
-      height: 30px;
+      height: 25px;
       opacity: 0.5;
       transition: opacity ease-in-out 250ms;
-      width: 30px;
+      width: 25px;
+
+      @media (min-width: 768px) {
+        height: 30px;
+        width: 30px;
+      }
 
       &:hover {
         opacity: 1;
@@ -38,11 +53,17 @@
       border-right: 1px solid rgba(255, 255, 255, 0.5);
       color: rgba(255, 255, 255, 0.5);
       font-family: Roboto, sans-serif;
-      font-size: 1.25rem;
+      font-size: 1rem;
       letter-spacing: -1px;
       line-height: 0.9;
-      margin-right: 1.25rem;
-      padding-right: 1.25rem;
+      margin-right: 1rem;
+      padding-right: 1rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        padding-right: 1.25rem;
+      }
 
       &:last-child {
         border-right-style: none;
