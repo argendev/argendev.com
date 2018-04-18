@@ -20,7 +20,7 @@
     width: 125%;
 
     &.visible {
-      animation: bg 32000ms linear infinite;
+      animation: background-slide 32s linear infinite;
       opacity: 1;
       visibility: visible;
       z-index: 1;
@@ -36,7 +36,7 @@
   }
 }
 
-@keyframes bg {
+@keyframes background-slide {
   0% {
     transform: translateX(0);
   }

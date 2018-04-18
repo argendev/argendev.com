@@ -1,8 +1,6 @@
 (function() {
   'use strict';
 
-  console.log('JS loaded');
-
   // Vars.
   var $body = document.body;
   var pos = 0;
@@ -34,7 +32,6 @@
   });
 
   // Slideshow Background.
-
   // Create background wrapper.
   $wrapper = document.createElement('div');
   $wrapper.id = 'bg';

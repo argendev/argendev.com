@@ -1,5 +1,5 @@
 // Vendor.
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 // Core styles.
 @import 'core/base';
@@ -8,5 +8,6 @@
 @import 'core/background';
 
 // Components.
+@import 'components/container';
 @import 'components/header';
 @import 'components/footer';
