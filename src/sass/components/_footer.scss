@@ -2,39 +2,65 @@
   bottom: 0;
   left: 0;
   margin-bottom: 2rem;
-  margin-left: 2rem; // localise
-  opacity: 0.5;
+  margin-left: 4rem;
   position: absolute;
 
-  &:hover {
-    opacity: 1;
-  }
+  // Social links and contact details.
+  &__social {
+    @include horizontal-list;
+    margin-bottom: 1.5rem;
 
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
+    &-item {
+      margin-right: 1.9rem;
+    }
 
-.footer__copyright {
-  font-size: 0.8em;
-  list-style: none;
-  padding: 0;
+    &-icon {
+      height: 30px;
+      opacity: 0.5;
+      transition: opacity ease-in-out 250ms;
+      width: 30px;
 
-  li {
-    // border-left: solid 1px _palette(border2);
-    display: inline-block;
-    line-height: 1em;
-    margin: 0 0 0 0.75em;
-    padding: 0 0 0 0.75em;
+      &:hover {
+        opacity: 1;
+      }
+    }
 
-    &:first-child {
-      border-left: 0;
-      margin-left: 0;
-      padding-left: 0;
+    &-label {
+      display: none;
     }
   }
 
-  a {
-    color: inherit;
+  // Copyright links underneath Social links.
+  &__copyright {
+    @include horizontal-list;
+
+    &-item {
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      font-family: Roboto, sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: -1px;
+      line-height: 0.9;
+      margin-right: 1.25rem;
+      padding-right: 1.25rem;
+
+      &:last-child {
+        border-right-style: none;
+        padding-right: 0;
+      }
+    }
+
+    &-link {
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+      color: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all ease-in-out 250ms;
+
+      &:hover {
+        border-bottom-color: #fff;
+        color: #fff;
+      }
+    }
   }
 }
